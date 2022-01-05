@@ -51,4 +51,6 @@ fn main() {
         email: String::from("tengmu3@dian.so"),
         ..user2
     };
+
+    println!("{:#?}", user3);
 }
