@@ -12,14 +12,12 @@ fn main() {
     let i = first_word_index(&s3);
     println!("{}", i);
 
-    let s5 = "test";
-    let string = s5.to_owned();
-    let s4 = String::from("helloworld");
-    let sub = first_word(&string);
+    let s6 = String::from("hello world");
+    let sub = first_word(&s6);
     println!("{}",sub);
 }
 
-fn first_word(str: &String) -> &str {
+fn first_word(str: &str) -> &str {
     let bytes = str.as_bytes();
     for (i, &item) in bytes.iter().enumerate() {
         if item == b' ' {
