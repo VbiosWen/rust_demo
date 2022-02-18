@@ -1,5 +1,8 @@
+
+
 // #![crate_name = "doc"]
 /// A human being is represented there
+#[derive(Debug)]
 pub struct Person {
     name: String,
 }
